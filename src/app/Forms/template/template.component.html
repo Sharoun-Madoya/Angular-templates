@@ -1,0 +1,25 @@
+<p>template works!</p>
+<div class="container">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+        <div>
+        <div class="mb-3">
+            <label>First Name</label>
+            <input type="text" class="form-control" id="firstname" formControlName="firstname" name="firstname" ngModel>
+        </div>
+        <div class="mb-3">
+            <label>Last Name</label>
+            <input type="text" class="form-control" id="lastname" formControlName="lastname" name="firstname" ngModel>
+        </div>
+        <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" formControlName="email" name="password" ngModel>
+        </div>
+        <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password" name="passwors" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit"></button>
+    </div>
+</form>
+</div>
+
